@@ -1,0 +1,30 @@
+/**
+ * @license
+ *
+ * Font Family: General Sans
+ * Designed by: Frode Helland
+ * URL: https://www.fontshare.com/fonts/general-sans
+ * © 2022 Indian Type Foundryneral Sans Bold Italic
+ *
+*/
+
+@font-face {
+  font-family: 'GeneralSans 600';
+  src: url('../../fonts/general-sans/GeneralSans-Semibold.woff2') format('woff2'),
+       url('../../fonts/general-sans/GeneralSans-Semibold.woff') format('woff'),
+       url('../../fonts/general-sans/GeneralSans-Semibold.ttf') format('truetype');
+       font-weight: 600;
+       font-display: swap;
+       font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'GeneralSans 700';
+  src: url('../../fonts/general-sans/GeneralSans-Bold.woff2') format('woff2'),
+       url('../../fonts/general-sans/GeneralSans-Bold.woff') format('woff'),
+       url('../../fonts/general-sans/GeneralSans-Bold.ttf') format('truetype');
+       font-weight: 700;
+       font-display: swap;
+       font-style: normal;
+}
