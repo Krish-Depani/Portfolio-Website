@@ -22,9 +22,6 @@
   clear: both;
 }
 
-/******************************************
-/* BASE STYLES
-/*******************************************/
 html {
   font-size: 62.5%;
 }
@@ -35,13 +32,15 @@ body {
 }
 
 body {
-  background-color: rgb(34, 40, 49);
+  /* background-color: rgb(34, 40, 49); */
+  background-color: rgb(0, 0, 0);
 
   font-family: "Satoshi 400";
   font-size: 1.5rem;
   font-weight: 300;
   line-height: 1.5;
-  color: rgb(204, 213, 243);
+  /* color: rgb(204, 213, 243); */
+  color: rgb(208, 212, 212);
 }
 
 header,
@@ -54,7 +53,6 @@ footer {
 h1,
 .declaration {
   margin: 0;
-
   font-family: "GeneralSans 700";
   font-size: 3.5rem;
 }
@@ -70,8 +68,26 @@ h3 {
   font-size: 2rem;
 }
 
+h4 {
+  margin: 0;
+  margin-left: 2rem;
+  font-family: "Satoshi 700";
+  font-size: 2.5rem;
+}
+
 .separator {
   margin-bottom: 1rem;
+}
+
+.logo {
+  background: -webkit-linear-gradient(
+    top right,
+    rgba(18, 55, 246, 1),
+    rgba(9, 244, 244, 1)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .featured-projects-box h3 {
@@ -102,15 +118,9 @@ a > img:hover {
   transition: all 0.4s ease-in-out;
 }
 
-/******************************************
-/* LAYOUT
-font-family: 'Fira Mono', monospace;
-font-family: 'Fira Sans', sans-serif;
-/*******************************************/
-/* HEADER AND NAV STYLING */
 header {
   padding: 1rem 2rem;
-  border-bottom: 1px solid rgb(38, 50, 67);
+  border-bottom: 1px solid rgb(0, 0, 0);
 }
 
 nav {
@@ -126,7 +136,7 @@ nav img {
 
 .nav-menu {
   position: fixed;
-  display: contents;
+  display: flex;
   top: -2rem;
   right: -200vh;
   height: 100vh;
@@ -140,7 +150,7 @@ nav img {
   align-items: center;
   gap: 2.5rem;
 
-  background: rgb(31, 38, 49);
+  background: #131313;
   transition: all 0.5s ease-in-out;
 
   z-index: 2;
@@ -150,13 +160,9 @@ nav img {
   top: 0;
   right: 0;
   margin: 0;
-
-  box-shadow: 0 1rem 5rem 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 1rem 5rem 0 #131313;
 }
 
-/**************************
-/* HAMBURGER, MENU-BAR STYLING 
-**************************/
 .hamburger {
   height: 3.5rem;
   width: 3.5rem;
@@ -173,7 +179,7 @@ nav img {
   position: fixed;
   top: 2.3rem;
   right: 2rem;
-  background: rgb(31, 38, 49);
+  background: #131313;
 }
 
 .menu-bar {
@@ -222,30 +228,27 @@ nav img {
   transform: rotate(-45deg) translateX(1.5rem);
 }
 
-/* ***********************
-/* NAV LINKS STYLES
-*************************/
 .nav-link a {
-  color: rgb(204, 213, 243);
+  color: rgb(208, 212, 212);
 }
 
 .nav-link a:hover {
   color: rgba(24, 185, 207, 0.9);
 }
 
-.nav-link:nth-child(4):hover {
+.nav-link:nth-child(5):hover {
   transform: scale(1.08);
   background: transparent;
   transition: transform 0.4s ease-in-out;
 }
 
-.nav-link:nth-child(4) a {
+.nav-link:nth-child(5) a {
   display: block;
   padding: 0.8rem 2.5rem;
   cursor: pointer;
 }
 
-.nav-link:nth-child(4) a {
+.nav-link:nth-child(5) a {
   color: rgb(204, 213, 243);
 }
 
@@ -289,10 +292,9 @@ main {
 
 .declaration {
   margin: 0;
-
   font-size: 2.5rem;
   line-height: 1.4;
-  color: rgb(178, 185, 207);
+  color: rgb(208, 212, 212);
 }
 
 .cta-box {
@@ -319,7 +321,7 @@ main {
 
   text-align: center;
   text-decoration: none;
-  color: rgb(204, 213, 243);
+  color: rgb(208, 212, 212);
 }
 
 .cta1 {
@@ -333,7 +335,7 @@ main {
 }
 
 .cta2,
-.nav-link:nth-child(4) {
+.nav-link:nth-child(5) {
   position: relative;
   border-radius: 1rem;
   border-image-slice: 1;
@@ -346,7 +348,7 @@ main {
 }
 
 .cta2::after,
-.nav-link:nth-child(4)::after {
+.nav-link:nth-child(5)::after {
   position: absolute;
   content: "";
   top: -1.8px;
@@ -369,6 +371,7 @@ main {
   justify-content: center;
   align-items: center;
   padding-bottom: 10rem;
+  text-align: justify;
 }
 
 .separator {
@@ -384,7 +387,7 @@ main {
   width: 5rem;
   height: 0.5rem;
   border-radius: 3.5rem;
-  background-color: rgb(126, 146, 217);
+  background-color: rgb(31, 165, 218);
 }
 
 .about-text {
@@ -415,10 +418,11 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5px;
+  margin-top: 5rem;
+  /* margin-bottom: 0.5rem; */
   padding: 0.3rem;
   border-radius: 1.8rem;
+  height: max-content;
   background: linear-gradient(
     99.41deg,
     #002cc7 -39.51%,
@@ -442,6 +446,21 @@ main {
   object-fit: fill;
 }
 
+/* SKILLS SECTION STYLING */
+.skill {
+  width: 100px;
+  height: 20px; 
+  display: inline-block;
+  text-align: center;
+  line-height: 20px;
+}
+
+#skills {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 10rem;
+}
+
 /* PROJECTS SECTION STYLING */
 .featured-projects-box,
 .other-projects-box {
@@ -456,12 +475,10 @@ main {
 .project {
   display: flex;
   flex-direction: column-reverse;
-
   max-width: 35rem;
   max-height: 58rem;
-  background: rgb(38, 50, 67);
+  background: rgb(255, 255, 255, 0.1);
   box-shadow: 0 1rem 2rem 0 rgba(27, 27, 27, 0.1);
-
   border-radius: 1.2rem;
 }
 
@@ -500,9 +517,7 @@ h3 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-
   padding-bottom: 0.3rem;
-
   font-family: "Satoshi 700";
 }
 
@@ -536,9 +551,9 @@ h3 {
 .side-project {
   padding: 4.5rem 2.75rem;
   max-width: 35rem;
-  background: rgba(38, 50, 67, 1);
+  background-color: rgb(255, 255, 255, 0.1);
   box-shadow: 0 1rem 2rem 0 rgba(27, 27, 27, 0.1);
-
+  border-radius: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -558,7 +573,14 @@ h3 {
 .side-project h3,
 .side-project span {
   margin: 2.2rem 0 0;
-  color: #7e92d9;
+  background: -webkit-linear-gradient(
+    90.98deg,
+    rgba(24, 185, 207, 0.9) -2.14%,
+    #6688ff 103.54%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .side-project span {
@@ -583,15 +605,21 @@ h3 {
 #contact span {
   font-family: "Satoshi 500";
   font-size: 1.6rem;
-  color: rgba(126, 146, 217, 1);
+  background: -webkit-linear-gradient(
+    90.98deg,
+    rgba(24, 185, 207, 0.9) -2.14%,
+    #6688ff 103.54%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
-h4 {
+/* h4 {
   margin: 1rem;
-
   font-family: "Satoshi 900";
   font-size: 3rem;
-}
+} */
 
 h4 + p {
   padding: 1rem 0 2rem;
@@ -625,6 +653,18 @@ footer span {
   background-clip: text;
 }
 
+.contact-form {
+  padding: 4.5rem 2.75rem;
+  max-width: 35rem;
+  background: rgba(38, 50, 67, 1);
+  box-shadow: 0 1rem 2rem 0 rgba(27, 27, 27, 0.1);
+  /* center the elements of form */
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 /******************************************
 /* ADDITIONAL STYLES
 /* MEDIA QUERIES
@@ -635,7 +675,6 @@ footer span {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
     font-size: 1.55rem;
   }
 
@@ -737,10 +776,6 @@ footer span {
     padding: 2rem 3.5rem;
   }
 
-  .logo {
-    width: 9.5rem;
-  }
-
   main section {
     width: 52rem;
   }
@@ -794,9 +829,13 @@ footer span {
     position: relative;
     padding: 2rem;
     border-radius: 0.8rem;
-    background: rgb(38, 50, 67);
-    box-shadow: 0 1rem 3rem 0 rgba(27, 27, 27, 0.2);
-
+    /* background: rgb(255, 255, 255, 0.05);
+    box-shadow: 0 1rem 3rem 0 rgba(27, 27, 27, 0.2); */
+    backdrop-filter: blur(5px) saturate(200%);
+    -webkit-backdrop-filter: blur(2px) saturate(200%);
+    background-color: rgba(17, 25, 40, 0.7);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
     z-index: 1;
   }
 
@@ -807,8 +846,8 @@ footer span {
     height: 100%;
     bottom: 0;
     border-radius: 0.8rem;
-    transform: skew(-16deg);
-    background-color: rgb(38, 50, 67);
+    /* transform: skew(-16deg); */
+    /* background-color: rgb(255, 255, 255, 0.05); */
     z-index: -2;
   }
 
@@ -822,8 +861,8 @@ footer span {
     right: 2.7rem;
     bottom: 0;
     border-radius: 0.8rem;
-    transform: skew(-10deg);
-    background-color: rgb(38, 50, 67);
+    /* transform: skew(-10deg);
+    background-color: rgb(38, 50, 67); */
     z-index: -2;
   }
 
@@ -876,6 +915,9 @@ footer span {
 
   .side-project {
     max-width: 33.33%;
+    background-color: rgb(255, 255, 255, 0.1);
+    box-shadow: 0 1rem 2rem 0 rgba(27, 27, 27, 0.1);
+    border-radius: 1rem;
   }
 
   .img-box {
@@ -902,6 +944,10 @@ footer span {
 
   nav {
     justify-content: space-between;
+  }
+
+  .nav-menu {
+    justify-content: flex-end;
   }
 
   nav > a {
@@ -937,6 +983,12 @@ footer span {
 
   #about .separator + div {
     width: 55%;
+  }
+
+  .side-project {
+    background-color: rgb(255, 255, 255, 0.1);
+    box-shadow: 0 1rem 2rem 0 rgba(27, 27, 27, 0.1);
+    border-radius: 1rem;
   }
 
   #contact div {
@@ -977,6 +1029,12 @@ footer span {
 
   .project-image-box img {
     height: 100%;
+  }
+
+  .side-project {
+    background-color: rgb(255, 255, 255, 0.1);
+    box-shadow: 0 1rem 2rem 0 rgba(27, 27, 27, 0.1);
+    border-radius: 1rem;
   }
 
   .cta2 {
