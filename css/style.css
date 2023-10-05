@@ -639,14 +639,14 @@ footer {
 
   font-size: 1.3rem;
   text-align: center;
-  color: rgb(143, 148, 164);
+  color: rgb(208, 212, 212);
 }
 
 footer span {
-  background: linear-gradient(
-    210deg,
-    rgba(29, 228, 255, 0.81) -6.94%,
-    rgba(59, 83, 168, 0.9) 97.22%
+  background: -webkit-linear-gradient(
+    90.98deg,
+    rgba(24, 185, 207, 0.9) -2.14%,
+    #6688ff 103.54%
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
